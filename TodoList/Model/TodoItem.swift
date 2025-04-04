@@ -7,10 +7,10 @@
 
 import Foundation
 
-struct TodoItem: Identifiable {
-    let id = UUID()
+struct TodoItem: Identifiable, Codable {
+    var id: Int?
     var title: String
-    var done:  Bool
+    var done: Bool
 }
 
 let firstItem = TodoItem(title: "Study for Chemisty quiz", done: false)
